@@ -4,13 +4,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.ipfaffen.ovenbird</groupId>
+	<groupId>com.github.ipfaffen</groupId>
 	<artifactId>ovenbird-commons</artifactId>
 	<version>1.0.1</version>
 	<packaging>jar</packaging>
 	
 	<name>Ovenbird Commons</name>
-	<description>Commons library for general use</description>
+	<description>Ovenbird Commons is an utility library focused on all aspects of reusable Java components.</description>
 	<url>https://github.com/ipfaffen/ovenbird-commons</url>
 
 	<developers>
