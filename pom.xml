@@ -13,6 +13,20 @@
 	<description>Ovenbird Commons is an utility library focused on all aspects of reusable Java components.</description>
 	<url>https://github.com/ipfaffen/ovenbird-commons</url>
 
+	<licenses>
+	    <license>
+	      	<name>Apache License, Version 2.0</name>
+	      	<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+	    	<distribution>repo</distribution>
+	    </license>
+  	</licenses>
+  
+	<scm>
+	  <connection>scm:git:git://github.com/ipfaffen/ovenbird-commons.git</connection>
+	  <developerConnection>scm:git:ssh://github.com/ipfaffen/ovenbird-commons.git</developerConnection>
+	  <url>http://github.com/ipfaffen/ovenbird-commons/tree/master</url>
+	</scm>
+
 	<developers>
 		<developer>
 			<id>ipfaffenseller</id>
@@ -115,44 +129,32 @@
 		</dependency>
 
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>
-				<artifactId>maven-eclipse-plugin</artifactId>
-				<version>2.9</version>
-				<configuration>
-					<additionalProjectnatures>
-						<projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
-					</additionalProjectnatures>
-					<additionalBuildcommands>
-						<buildcommand>org.springframework.ide.eclipse.core.springbuilder</buildcommand>
-					</additionalBuildcommands>
-					<downloadSources>true</downloadSources>
-					<downloadJavadocs>true</downloadJavadocs>
-				</configuration>
-			</plugin>
-			
+  				<groupId>org.apache.maven.plugins</groupId>
+  				<artifactId>maven-source-plugin</artifactId>
+  				<executions>
+	    			<execution>
+	      				<id>attach-sources</id>
+	      				<goals>
+	        				<goal>jar</goal>
+	      				</goals>
+	    			</execution>
+  				</executions>
+			</plugin>	
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.5.1</version>
-				<configuration>
-					<source>${java.version}</source>
-					<target>${java.version}</target>
-					<compilerArgument>-Xlint:all</compilerArgument>
-					<showWarnings>true</showWarnings>
-					<showDeprecation>true</showDeprecation>
-				</configuration>
-			</plugin>
-			
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>exec-maven-plugin</artifactId>
-				<version>1.2.1</version>
-				<configuration>
-					<mainClass>org.test.int1.Main</mainClass>
-				</configuration>
+  				<groupId>org.apache.maven.plugins</groupId>
+  				<artifactId>maven-javadoc-plugin</artifactId>
+  				<executions>
+    				<execution>
+      					<id>attach-javadocs</id>
+      					<goals>
+        					<goal>jar</goal>
+      					</goals>
+    				</execution>
+  				</executions>
 			</plugin>
 		</plugins>
 	</build>
