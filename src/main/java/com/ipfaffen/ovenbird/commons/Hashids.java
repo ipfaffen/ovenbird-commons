@@ -10,7 +10,6 @@ import java.util.regex.Pattern;
  * as forgotten password hashes, invitation codes, store shard numbers. This is implementation of http://hashids.org
  *
  * @author https://github.com/jiecao-fm/hashids-java
- * @author Isaias Pfaffenseller	
  * @version 1.0.2 
  */
 public class Hashids {

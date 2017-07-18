@@ -9,6 +9,7 @@ import java.util.Date;
  * @author Isaias Pfaffenseller
  */
 public class CalendarUtil {
+	
 	/**
 	 * Calendar with current date but time fields setted to first hour (<b>HOUR_OF_DAY</b> = 0; <b>MINUTE</b> = 0; <b>SECOND</b> = 0).
 	 */
