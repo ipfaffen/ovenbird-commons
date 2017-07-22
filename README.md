@@ -1,2 +1,2 @@
 # Ovenbird Commons
-Android application to help working with Pomodoro Technique.
+Ovenbird Commons is an utility library focused on all aspects of reusable Java components.
